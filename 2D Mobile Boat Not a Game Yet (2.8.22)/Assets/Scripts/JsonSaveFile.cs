@@ -42,22 +42,18 @@ public class JsonSaveFile : MonoBehaviour
         myPlayerData.PaymentData.expiry_year = 26;
         myPlayerData.PaymentData.security_ccv = 124;
 
-
-
         //now, let's serialize, and turn the object into json string
         string json = JsonUtility.ToJson(myPlayerData);
-        Debug.Log(json);
+        //Debug.Log(json);
 
         Debug.Log(Application.persistentDataPath);
         File.WriteAllText(Application.persistentDataPath + @"\json.txt", json);
 
-
         //read data from json and deserialize it (trun it into a string)
-        string json_from_file = File.ReadAllText(Application.persistentDataPath + @"\json.txt");
+        //string json_from_file = File.ReadAllText(Application.persistentDataPath + @"\json.txt");
 
-        PlayerData from_Json_player_data = JsonUtility.FromJson<PlayerData>(json_from_file);
-        Debug.Log(from_Json_player_data.XP);
+        //PlayerData from_Json_player_data = JsonUtility.FromJson<PlayerData>(json_from_file);
+        //Debug.Log(from_Json_player_data.XP);
     }
 
-    
 }

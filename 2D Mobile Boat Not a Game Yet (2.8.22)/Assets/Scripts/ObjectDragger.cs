@@ -1,12 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ObjectDragger : MonoBehaviour
 {
     Vector3 offset;
 
-    
+
 
     private void OnMouseDown()
     {
@@ -26,6 +24,7 @@ public class ObjectDragger : MonoBehaviour
 
     private void OnMouseUp()
     {
-        Debug.Log("on mouse up");
+        //Debug.Log("on mouse up");
     }
+
 }

@@ -21,7 +21,7 @@ public class Player : MonoBehaviour
         {
             name = saved_name;
         }
-        Debug.Log(name);
+        //Debug.Log(name);
     }
 
     private void OnDestroy()
