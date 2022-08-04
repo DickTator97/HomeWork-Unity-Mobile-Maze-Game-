@@ -11,9 +11,10 @@ public class  BombCollision : MonoBehaviour
             Destroy(collision.gameObject);
 
             Debug.Log("Bomb Went Off ,Ship Sank");
+           //Add Explosion Sprite
+           //Add Explosion SFX
+          //Add Physical Blast?
         }
 
     }
-
-
 }

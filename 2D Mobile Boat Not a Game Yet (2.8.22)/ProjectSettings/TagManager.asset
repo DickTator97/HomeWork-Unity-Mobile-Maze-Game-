@@ -6,8 +6,9 @@ TagManager:
   tags:
   - Bomb
   - Gem-Green
-  - Gam-Red
   - Ship-Player
+  - Gem-Red
+  - Treasures
   layers:
   - Default
   - TransparentFX

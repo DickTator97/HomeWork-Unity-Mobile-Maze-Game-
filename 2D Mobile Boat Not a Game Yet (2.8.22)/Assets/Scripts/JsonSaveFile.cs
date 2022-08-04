@@ -12,6 +12,7 @@ public class PaymentData
     public int expiry_month;
     public int expiry_year;
     public int security_ccv;
+
 }
 
 [System.Serializable]
@@ -19,9 +20,10 @@ public class PlayerData
 {
     public int health;
     public string name;
-    public int XP;
+    public int GemCounter;
     public Vector3 position;
     public PaymentData PaymentData;
+
 }
 
 public class JsonSaveFile : MonoBehaviour
@@ -32,9 +34,9 @@ public class JsonSaveFile : MonoBehaviour
     {
         //crating data class instance
         PlayerData myPlayerData = new PlayerData();
-        myPlayerData.health = 5;
-        myPlayerData.name = "Doom";
-        myPlayerData.XP = 5000;
+        myPlayerData.health = 1;
+        myPlayerData.name = "Shiply";
+        myPlayerData.GemCounter = 0;
         myPlayerData.position = transform.position;
         myPlayerData.PaymentData = new PaymentData();
         myPlayerData.PaymentData.id_card = "4234234234234";
@@ -55,5 +57,4 @@ public class JsonSaveFile : MonoBehaviour
         //PlayerData from_Json_player_data = JsonUtility.FromJson<PlayerData>(json_from_file);
         //Debug.Log(from_Json_player_data.XP);
     }
-
 }
